@@ -1,0 +1,22 @@
+{
+  "name": "module-federation",
+  "version": "1.0.0",
+  "description": "模块联邦测试",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cupcupw/module-federation.git"
+  },
+  "keywords": [
+    "模块联邦",
+    "微前端"
+  ],
+  "author": "whb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cupcupw/module-federation/issues"
+  },
+  "homepage": "https://github.com/cupcupw/module-federation#readme"
+}
