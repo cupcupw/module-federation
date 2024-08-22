@@ -24,19 +24,20 @@ export default defineConfig({
     }),
     federation({
       //定义模块服务名称
-      name: "remoteReactComponents",
+      name: "host",
       //build后的入口文件
       filename: "remoteEntry.js",
       //需要暴露的组件
       exposes: {
-        "./Home": "./src/views/HomeView.vue",
-        "./About": "./src/views/AboutView.vue",
+        "./App": "./src/App.vue",
+        "./main": "./src/main.ts"
       },
+      //远程服务地址
       remotes: {
         //vue 组件的远程模块
-        remoteWrap: "http://localhost:4174/assets/remoteEntry.js",
+        remoteVueComponents: "http://localhost:4173/assets/remoteEntry.js",
       },
-      //声明共享的依赖库
+      //共享依赖声明
       shared: ['vue', 'vue-router']
     }),
   ],
